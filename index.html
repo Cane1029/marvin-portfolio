@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta name="description" content="Marvin Guevarra designs practical AI workflow automations that connect tools, reduce repetitive work, and help businesses operate more smoothly.">
+  <meta property="og:title" content="AI Workflow Automation | Marvin Guevarra">
+  <meta property="og:description" content="Practical AI and workflow automation, designed around the way your business works.">
+  <meta property="og:url" content="https://marvinguevarra.com/">
+  <title>AI Workflow Automation | Marvin Guevarra</title>
+  <style>
+    :root{--ink:#172523;--muted:#5c6c67;--green:#176c57;--green-dark:#105240;--mint:#e6f3ec;--cream:#f7f8f4;--line:#dce5df;--white:#fff;--coral:#e7a27a;--shadow:0 24px 70px rgba(29,66,51,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:11px;align-items:center;text-decoration:none;font-weight:750;letter-spacing:-.03em}.brand-mark{width:36px;height:36px;border-radius:12px;background:var(--green);color:#fff;display:grid;place-items:center;font-size:18px}.nav-links{display:flex;gap:30px;align-items:center;font-size:14px;color:var(--muted)}.nav-links a{text-decoration:none}.nav-links a:hover{color:var(--green)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:white;text-decoration:none;border-radius:999px;padding:13px 21px;font-size:14px;font-weight:700;transition:.2s}.nav-cta{padding:10px 17px}.nav-cta:hover,.button:hover{background:var(--green-dark);transform:translateY(-1px)}
+    .hero{padding:78px 0 88px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:560px;height:560px;right:-120px;top:-210px;border-radius:50%;background:radial-gradient(circle,rgba(199,230,211,.72),rgba(199,230,211,0) 70%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #cfe0d5;background:#eff7f1;border-radius:999px;color:var(--green);font-size:12px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#4ea882}.hero h1{font-size:clamp(44px,6vw,72px);line-height:1.02;letter-spacing:-.065em;margin:23px 0 20px;max-width:680px}.hero h1 em{font-style:normal;color:var(--green)}.hero-copy{font-size:18px;color:var(--muted);max-width:580px;margin:0 0 28px}.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.button.secondary{background:transparent;border:1px solid var(--line);color:var(--ink)}.button.secondary:hover{background:#fff}.small-note{font-size:12px;color:var(--muted);margin-top:18px}.workflow-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:var(--shadow);transform:rotate(1deg)}.card-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:20px;border-bottom:1px solid #edf0ed}.card-top strong{font-size:14px}.live{font-size:11px;color:var(--green);font-weight:700;background:var(--mint);border-radius:99px;padding:5px 9px}.flow{display:grid;gap:12px;padding:20px 0 2px}.flow-row{display:flex;align-items:center;gap:13px;border:1px solid #edf0ed;border-radius:15px;padding:13px;background:#fff}.flow-icon{height:38px;width:38px;border-radius:12px;background:#edf7f0;display:grid;place-items:center;color:var(--green);font-size:18px;flex:0 0 auto}.flow-row strong{display:block;font-size:13px;line-height:1.3}.flow-row span{display:block;color:var(--muted);font-size:11px;margin-top:3px}.flow-arrow{text-align:center;color:#91aa9d;font-size:16px;line-height:.6}.flow-result{background:#eff8f2;border-color:#d5e9dc}.quote{position:absolute;right:-34px;bottom:-28px;background:#fff8f1;border:1px solid #f2dfcf;padding:13px 16px;border-radius:14px;font-size:12px;font-weight:650;box-shadow:0 10px 30px #4441;transform:rotate(-3deg)}
+    .proofline{padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted);font-size:13px}.proof-inner{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}.proof-items{display:flex;gap:24px;flex-wrap:wrap;font-weight:650;color:#40534c}.proof-items span:before{content:"✓";color:var(--green);margin-right:8px}
+    section{padding:92px 0}.section-head{max-width:660px;margin-bottom:42px}.kicker{color:var(--green);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.section-head h2{font-size:clamp(32px,4vw,48px);letter-spacing:-.055em;line-height:1.1;margin:11px 0 15px}.section-head p{color:var(--muted);font-size:16px;margin:0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;min-height:218px}.step-num{font-size:12px;font-weight:800;color:var(--green);background:var(--mint);height:32px;width:32px;border-radius:10px;display:grid;place-items:center}.step h3{font-size:18px;letter-spacing:-.03em;margin:20px 0 8px}.step p{font-size:14px;color:var(--muted);margin:0}.channels{background:#edf4ef}.channel-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.channel{background:white;border-radius:22px;padding:28px;border:1px solid #dfe8e1}.channel-icon{font-size:22px;width:46px;height:46px;border-radius:15px;background:#f0f7f2;display:grid;place-items:center}.channel h3{font-size:21px;margin:18px 0 8px;letter-spacing:-.035em}.channel p{font-size:14px;color:var(--muted);margin:0}.channel-tag{display:inline-block;margin-top:17px;font-size:11px;font-weight:750;color:var(--green);background:var(--mint);padding:6px 10px;border-radius:99px}
+    .value-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}.value-grid .section-head{margin:0}.value-list{display:grid;gap:17px}.value-item{display:flex;gap:14px}.check{width:25px;height:25px;background:var(--mint);border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:13px;flex:0 0 auto;margin-top:1px}.value-item strong{display:block;font-size:15px}.value-item p{margin:4px 0 0;color:var(--muted);font-size:14px}.pricing{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.pricing-box{display:grid;grid-template-columns:1fr 1fr;gap:22px}.price-card{border:1px solid var(--line);border-radius:22px;padding:29px;background:#fff}.price-card.featured{background:var(--green);border-color:var(--green);color:#fff}.price-card h3{margin:0 0 10px;font-size:20px}.price-card p{font-size:14px;color:var(--muted);margin:0}.featured p{color:#d5e9df}.price-label{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--green);margin-bottom:13px}.featured .price-label{color:#b8e2ca}.price-card ul{padding:0;margin:20px 0 0;list-style:none;display:grid;gap:10px;font-size:13px}.price-card li:before{content:"✓";font-weight:800;margin-right:9px;color:var(--green)}.featured li:before{color:#b8e2ca}.fineprint{font-size:12px!important;margin-top:22px!important;opacity:.8}
+    .cta{padding:78px 0}.cta-box{border-radius:28px;background:#e5f2e9;padding:54px;display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative;overflow:hidden}.cta-box:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#d4eade;right:18%;top:-210px}.cta-content{position:relative;z-index:1;max-width:630px}.cta h2{font-size:clamp(31px,4vw,46px);letter-spacing:-.055em;line-height:1.12;margin:10px 0}.cta p{color:#50665c;margin:0}.cta .button{position:relative;z-index:1;white-space:nowrap}.contact-hint{font-size:12px!important;margin-top:10px!important}.footer{padding:25px 0 38px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:var(--green);text-decoration:none}
+    .products{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product-card{background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:27px;display:flex;flex-direction:column;min-height:335px}.product-card.popular{background:#edf6ef;border-color:#c6ddcd}.product-badge{display:inline-flex;align-self:flex-start;padding:6px 10px;background:#e5f2e9;color:var(--green);border-radius:99px;text-transform:uppercase;letter-spacing:.08em;font-size:10px;font-weight:800}.popular .product-badge{background:var(--green);color:#fff}.product-card h3{font-size:22px;line-height:1.18;letter-spacing:-.04em;margin:19px 0 10px}.product-card p{font-size:14px;color:var(--muted);margin:0}.product-card ul{padding:0;margin:18px 0 24px;list-style:none;display:grid;gap:8px;font-size:13px;color:#40534c}.product-card li:before{content:"✓";color:var(--green);font-weight:800;margin-right:8px}.product-card .button{align-self:flex-start;margin-top:auto}.testimonials{background:#edf4ef}.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.testimonial-card{background:#fff;border:1px dashed #a9c7b4;border-radius:20px;padding:25px;min-height:205px;display:flex;flex-direction:column}.quote-mark{font-family:Georgia,serif;color:#8bb69b;font-size:40px;line-height:.9}.testimonial-card blockquote{margin:13px 0 22px;color:#64736c;font-size:14px;font-style:italic}.testimonial-author{margin-top:auto;border-top:1px solid #edf0ed;padding-top:13px;font-size:12px;color:var(--muted)}.testimonial-author strong{display:block;color:var(--ink);font-size:13px}.testimonial-note{font-size:12px;color:var(--muted);margin:18px 0 0}.funnel-cta{margin-top:38px;padding:25px 28px;border-radius:20px;background:var(--green);color:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center}.funnel-cta strong{font-size:18px}.funnel-cta span{display:block;color:#d5e9df;font-size:13px;margin-top:3px}.funnel-cta .button{background:#fff;color:var(--green);white-space:nowrap}.funnel-cta .button:hover{background:#eaf5ed}
+    @media(max-width:800px){.hero{padding:56px 0 65px}.hero-grid,.value-grid{grid-template-columns:1fr;gap:40px}.workflow-card{max-width:520px}.steps{grid-template-columns:1fr}.step{min-height:auto}.proof-inner{align-items:flex-start}.proof-items{gap:11px 18px}.value-grid .section-head{max-width:600px}.cta-box{padding:38px 30px;align-items:flex-start;flex-direction:column}.pricing-box{grid-template-columns:1fr}.product-grid,.testimonial-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.wrap{width:min(100% - 32px,1120px)}.nav{height:70px}.nav-links>a:not(.nav-cta){display:none}.nav-cta{font-size:12px;padding:9px 13px}.hero h1{font-size:47px}.hero-copy{font-size:16px}.workflow-card{padding:18px}.quote{right:-5px;bottom:-32px}.proof-items{font-size:12px}.proofline{padding:16px 0}section{padding:68px 0}.channel-grid,.product-grid,.testimonial-grid{grid-template-columns:1fr}.cta-box{padding:32px 24px}.cta .button{white-space:normal}.funnel-cta{align-items:flex-start;flex-direction:column}.footer-inner{display:block}.footer-inner span{display:block;margin:4px 0}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top" aria-label="Marvin Guevarra home"><span class="brand-mark">✳</span><span>Marvin Guevarra</span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#capabilities">What I automate</a><a href="#work">Workflow example</a><a href="#products">Services</a><a class="nav-cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="top">
+    <section class="hero" style="padding-top:30px">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> AI workflow automation</div>
+          <h1>Make your business work <em>smarter with AI</em> and automation.</h1>
+          <p class="hero-copy">I design practical AI workflows that connect your tools, reduce repetitive tasks, and help your team move work forward. From customer communication to document processing, each workflow starts with a real business need.</p>
+          <div class="hero-actions"><a class="button" href="#contact">Discuss a workflow <span aria-hidden="true">→</span></a><a class="button secondary" href="#work">See a workflow example</a></div>
+          <p class="small-note">Professional setup and custom automation are scoped to your goals, tools, and budget.</p>
+        </div>
+        <div class="workflow-card" aria-label="Illustration of an inquiry being matched with business knowledge to create a helpful answer">
+          <div class="card-top"><strong>From business task to smart workflow</strong><span class="live">AI + AUTOMATION</span></div>
+          <div class="flow">
+            <div class="flow-row"><div class="flow-icon">↗</div><div><strong>A task or trigger</strong><span>Message · form · new document</span></div></div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-row"><div class="flow-icon">⌕</div><div><strong>Search business knowledge</strong><span>Relevant details from your documents</span></div></div>
+            <div class="flow-arrow">↓</div>
+            <div class="flow-row flow-result"><div class="flow-icon">✦</div><div><strong>Work moves forward</strong><span>With less repetitive manual effort</span></div></div>
+          </div>
+          <div class="quote">Your knowledge, ready to help ✨</div>
+        </div>
+      </div>
+    </section>
+    <div class="proofline"><div class="wrap proof-inner"><span>Designed around your existing tools and processes</span><div class="proof-items"><span>AI assistants</span><span>Connected workflows</span><span>Practical automation</span></div></div></div>
+
+    <section id="how-it-works"><div class="wrap">
+      <div class="section-head"><div class="kicker">My approach</div><h2>Automation starts with understanding the work.</h2><p>I map the task, tools, and handoffs first, then design a workflow that fits the process and the people using it.</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-num">01</div><h3>Find the opportunity</h3><p>Identify repetitive tasks, bottlenecks, and the outcome the business wants to improve.</p></article>
+        <article class="step"><div class="step-num">02</div><h3>Design the workflow</h3><p>Choose the right tools, AI capabilities, and automation steps for the process.</p></article>
+        <article class="step"><div class="step-num">03</div><h3>Build and refine</h3><p>Configure the workflow, review how it behaves, and refine it around real use.</p></article>
+      </div>
+    </div></section>
+
+    <section class="channels" id="capabilities"><div class="wrap">
+      <div class="section-head"><div class="kicker">What I can help automate</div><h2>AI workflows for everyday business operations.</h2><p>These are starting points. The right solution depends on your process, tools, and desired outcome.</p></div>
+      <div class="channel-grid">
+        <article class="channel"><div class="channel-icon">✦</div><h3>AI assistants and knowledge search</h3><p>Connect business documents to AI workflows that can retrieve relevant information and support customer or team questions.</p><span class="channel-tag">RAG · document workflows · AI agents</span></article>
+        <article class="channel"><div class="channel-icon">⟳</div><h3>Process and task automation</h3><p>Move information between apps, trigger follow-up steps, and reduce repetitive work across business processes.</p><span class="channel-tag">App integrations · notifications · handoffs</span></article>
+        <article class="channel"><div class="channel-icon">✉</div><h3>Customer communication</h3><p>Support inquiry handling across email, chat, and social channels with workflows tailored to the platform and level of automation required.</p><span class="channel-tag">Email · chat · social messaging</span></article>
+        <article class="channel"><div class="channel-icon">▤</div><h3>Document and data workflows</h3><p>Organize incoming information, extract useful details, and route data to the next step in a process.</p><span class="channel-tag">Document intake · data routing</span></article>
+      </div>
+    </div></section>
+
+    <section id="work"><div class="wrap">
+      <div class="section-head"><div class="kicker">Featured workflow example</div><h2>Document-grounded customer response assistant.</h2><p>One example of how AI and automation can work together: make business documents searchable, then use that knowledge to help draft relevant responses.</p></div>
+      <div class="pricing-box">
+        <article class="price-card"><div class="price-label">Knowledge ingestion</div><h3>Prepare documents for search</h3><p>Google Drive files are loaded, split into smaller sections, embedded with Ollama, and stored in Pinecone for retrieval.</p><ul><li>Google Drive file search</li><li>Document loading and text splitting</li><li>Vector storage in Pinecone</li></ul></article>
+        <article class="price-card featured"><div class="price-label">AI response workflow</div><h3>Retrieve useful context for inquiries</h3><p>An AI Agent can search the knowledge base and use relevant information when generating a response through a connected channel.</p><ul><li>n8n orchestration</li><li>Ollama chat model and embeddings</li><li>Optional channel integrations</li></ul></article>
+      </div>
+    </div></section>
+
+    <section class="products" id="products"><div class="wrap">
+      <div class="section-head"><div class="kicker">Ways to work together</div><h2>From automation idea to working workflow.</h2><p>Start with a focused plan, build a tailored solution, or discuss ongoing operation. Each engagement is scoped around your process, tools, and goals.</p></div>
+      <div class="product-grid">
+        <article class="product-card"><span class="product-badge">Plan</span><h3>Automation Opportunity Review</h3><p>A practical starting point to identify suitable processes, tools, and opportunities for AI or workflow automation.</p><ul><li>Process and use case review</li><li>Opportunity recommendations</li><li>Suggested workflow outline</li></ul><a class="button secondary" href="mailto:connect@marvinguevarra.com?subject=Automation%20Opportunity%20Review">Ask about this</a></article>
+        <article class="product-card popular"><span class="product-badge">Build</span><h3>Custom AI Workflow</h3><p>Professional design and implementation of an automation tailored to your selected process and tools.</p><ul><li>Workflow configuration</li><li>AI and app integrations</li><li>Review and handover</li></ul><a class="button" href="#contact">Discuss your workflow <span aria-hidden="true">→</span></a></article>
+        <article class="product-card"><span class="product-badge">Operate</span><h3>Managed Automation</h3><p>Ongoing operation or a managed service arrangement for businesses that want continued support.</p><ul><li>Scope based on requirements</li><li>Hosting and usage considered</li><li>Ongoing service fee applies</li></ul><a class="button secondary" href="mailto:connect@marvinguevarra.com?subject=Managed%20Automation%20Inquiry">Ask about this</a></article>
+      </div>
+    </div></section>
+
+    <section class="testimonials" id="testimonials"><div class="wrap">
+      <div class="section-head"><div class="kicker">Client stories</div><h2>Let the results speak for themselves.</h2><p>This space is ready for genuine client feedback as projects are completed.</p></div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card"><div class="quote-mark">“</div><blockquote>Add a client quote describing the problem, what was implemented, and what changed for their team.</blockquote><div class="testimonial-author"><strong>Client name</strong>Role · Company</div></article>
+        <article class="testimonial-card"><div class="quote-mark">“</div><blockquote>Use a real testimonial that highlights the client experience, a useful outcome, or the value of the workflow.</blockquote><div class="testimonial-author"><strong>Client name</strong>Role · Company</div></article>
+        <article class="testimonial-card"><div class="quote-mark">“</div><blockquote>Replace this placeholder with approved customer feedback. Include measurable results only when the client has verified them.</blockquote><div class="testimonial-author"><strong>Client name</strong>Role · Company</div></article>
+      </div>
+      <p class="testimonial-note">These are content placeholders. Replace them with client-approved quotes before publishing, or remove this section until you have testimonials.</p>
+      <div class="funnel-cta"><div><strong>Not sure which option fits?</strong><span>Start with a short conversation about your customer inquiries and current process.</span></div><a class="button" href="#contact">Book a discovery call <span aria-hidden="true">↗</span></a></div>
+    </div></section>
+
+    <section><div class="wrap value-grid">
+      <div class="section-head"><div class="kicker">Built around your business</div><h2>Useful automation, shaped around the way you work.</h2><p>Connect your existing tools and processes with workflows designed to solve practical business problems.</p></div>
+      <div class="value-list">
+        <div class="value-item"><span class="check">✓</span><div><strong>Start with a real business need</strong><p>Focus on the repetitive work, handoff, or information gap you want to improve.</p></div></div>
+        <div class="value-item"><span class="check">✓</span><div><strong>Fit your existing tools</strong><p>Plan around the apps, data sources, and processes your team already uses.</p></div></div>
+        <div class="value-item"><span class="check">✓</span><div><strong>Grow at your pace</strong><p>Start with a focused workflow and add integrations or managed support as needed.</p></div></div>
+      </div>
+    </div></section>
+
+    <section class="pricing" id="pricing"><div class="wrap">
+      <div class="section-head"><div class="kicker">A flexible investment</div><h2>Choose how you want to run it.</h2><p>Tool and infrastructure costs depend on where the workflow runs, provider plans, usage, and the integrations you choose.</p></div>
+      <div class="pricing-box">
+        <article class="price-card"><div class="price-label">Client-run setup</div><h3>You operate it in your environment</h3><p>Some tools may be available at no subscription cost when you self-host and manage the workflow yourself. Hosting, provider limits, and usage can still affect operating costs.</p><ul><li>Professional setup available</li><li>Customization scoped to your needs</li><li>Client manages ongoing operation</li></ul></article>
+        <article class="price-card featured"><div class="price-label">Professional or managed service</div><h3>Get help building and running it</h3><p>Professional services and any managed or SaaS offering have a fee. Pricing depends on the agreed scope, integrations, support, and operating requirements.</p><ul><li>Implementation and configuration</li><li>Optional channel integrations</li><li>Managed service scope by agreement</li></ul><p class="fineprint">No fixed price is shown here because each project is scoped to the client’s requirements.</p></article>
+      </div>
+    </div></section>
+
+    <section class="cta" id="contact"><div class="wrap"><div class="cta-box"><div class="cta-content"><div class="kicker">Start a conversation</div><h2>What would you like to make easier?</h2><p>Tell me about a repetitive task, a process that feels disconnected, or an opportunity to use AI in your business. We can explore a workflow that fits your goals and budget.</p><p class="contact-hint">Or email <a href="mailto:connect@marvinguevarra.com">connect@marvinguevarra.com</a></p></div><a class="button" href="mailto:connect@marvinguevarra.com?subject=AI%20Workflow%20Automation%20Inquiry">Discuss a workflow <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> Marvin Guevarra · AI Workflow Automation</span><span>n8n · AI agents · workflow integrations</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
