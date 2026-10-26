@@ -26,7 +26,7 @@
   <header class="wrap nav">
     <a class="brand" href="#top" aria-label="Marvin Guevarra home"><span class="brand-mark">✳</span><span>Marvin Guevarra</span></a>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
-    <nav class="nav-links" id="primary-nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#automation">AI automation</a><a href="#workflows">Workflows</a><a href="#testimonials">Recommendations</a><a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></nav>
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#automation">AI automation</a><a href="#workflows">Workflows</a><a href="#scheduler">Smart Scheduler</a><a href="#testimonials">Recommendations</a><a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="top">
     <section class="hero" style="padding-top:30px">
@@ -107,6 +107,46 @@
         <article class="channel"><div class="channel-icon">▶</div><h3>Faceless Channel Content Pipeline</h3><p>An end-to-end content workflow: AI generates a story, another AI step creates image prompts, ComfyUI generates visuals, local text-to-speech creates voiceover, then captions are added and the video is rendered.</p><span class="channel-tag">AI content · ComfyUI · local TTS · captions · rendering</span></article>
       </div>
     </div></section>
+
+    <!-- NEW SMART SCHEDULER SECTION START -->
+    <section class="products" id="scheduler">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Agentic AI Project</div>
+          <h2>Smart Scheduling Assistant with Human Approval.</h2>
+          <p>An advanced, self-correcting n8n AI agent that manages Google Calendar bookings via Telegram using natural language, combining LLM intelligence with a strict Human-in-the-Loop safety net.</p>
+        </div>
+        
+        <div style="background:#fff; border:1px solid var(--line); border-radius:22px; padding:30px; box-shadow:var(--shadow); margin-bottom: 30px;">
+          <!-- Make sure to upload your image with the exact name 'smart-scheduler.png' to your GitHub repo -->
+          <img src="smart-scheduler.png" alt="Smart Scheduling Assistant n8n workflow" style="width:100%; border-radius:12px; border:1px solid #edf0ed; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 25px;">
+          
+          <div class="channel-grid" style="margin-top: 10px;">
+            <article class="channel" style="padding: 20px; background: var(--cream);">
+              <div class="channel-icon">🧠</div>
+              <h3>Intent & Logic</h3>
+              <p>Analyzes chat inputs, extracts dates/attendees, and mathematically checks the calendar for scheduling conflicts before proposing alternatives.</p>
+              <span class="channel-tag">Ollama · Code Nodes · API</span>
+            </article>
+            
+            <article class="channel" style="padding: 20px; background: var(--cream);">
+              <div class="channel-icon">🛡️</div>
+              <h3>Human-in-the-Loop</h3>
+              <p>Pauses execution to request human approval via Telegram. Includes a self-correction loop that reads feedback and rewrites the proposal if denied.</p>
+              <span class="channel-tag">Telegram · Approval Flow · Loop</span>
+            </article>
+            
+            <article class="channel" style="padding: 20px; background: var(--cream);">
+              <div class="channel-icon">⚙️</div>
+              <h3>Deterministic Execution</h3>
+              <p>Once approved, a dedicated agent handles the final API execution (Create, Update, Delete) with strict timezone offset formatting to prevent errors.</p>
+              <span class="channel-tag">Google Calendar · Execution Agent</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- NEW SMART SCHEDULER SECTION END -->
 
     <section><div class="wrap value-grid">
       <div class="section-head"><div class="kicker">Education</div><h2>Information technology foundation.</h2><p>Bachelor of Science in Information Technology, Central Bicol State University of Agriculture, Sipocot, Camarines Sur · 2014.</p></div>
