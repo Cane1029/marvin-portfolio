@@ -26,7 +26,7 @@
   <header class="wrap nav">
     <a class="brand" href="#top" aria-label="Marvin Guevarra home"><span class="brand-mark">✳</span><span>Marvin Guevarra</span></a>
     <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">☰</button>
-    <nav class="nav-links" id="primary-nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#automation">AI automation</a><a href="#workflows">Workflows</a><a href="#scheduler">Smart Scheduler</a><a href="#testimonials">Recommendations</a><a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></nav>
+    <nav class="nav-links" id="primary-nav" aria-label="Main navigation"><a href="#approach">Approach</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#automation">AI automation</a><a href="#workflows">Workflows</a><a href="#scheduler">Smart Scheduler</a><a href="#rag">RAG Pipeline</a><a href="#video">Video Pipeline</a><a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main id="top">
     <section class="hero" style="padding-top:30px">
@@ -108,7 +108,7 @@
       </div>
     </div></section>
 
-    <!-- NEW SMART SCHEDULER SECTION START -->
+    <!-- SMART SCHEDULER SECTION START -->
     <section class="products" id="scheduler">
       <div class="wrap">
         <div class="section-head">
@@ -118,7 +118,6 @@
         </div>
         
         <div style="background:#fff; border:1px solid var(--line); border-radius:22px; padding:30px; box-shadow:var(--shadow); margin-bottom: 30px;">
-          <!-- Make sure to upload your image with the exact name 'smart-scheduler.png' to your GitHub repo -->
           <img src="smart-scheduler.png" alt="Smart Scheduling Assistant n8n workflow" style="width:100%; border-radius:12px; border:1px solid #edf0ed; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 25px;">
           
           <div class="channel-grid" style="margin-top: 10px;">
@@ -146,37 +145,26 @@
         </div>
       </div>
     </section>
-    <!-- NEW SMART SCHEDULER SECTION END -->
+    <!-- SMART SCHEDULER SECTION END -->
 
-    <section><div class="wrap value-grid">
-      <div class="section-head"><div class="kicker">Education</div><h2>Information technology foundation.</h2><p>Bachelor of Science in Information Technology, Central Bicol State University of Agriculture, Sipocot, Camarines Sur · 2014.</p></div>
-      <div class="value-list">
-        <div class="value-item"><span class="check">✓</span><div><strong>Delivery methods</strong><p>Hybrid Agile and Waterfall project management.</p></div></div>
-        <div class="value-item"><span class="check">✓</span><div><strong>Project tools</strong><p>Trello, ClickUp, and Microsoft Excel.</p></div></div>
-        <div class="value-item"><span class="check">✓</span><div><strong>Technical background</strong><p>Experience across Java, COBOL, VB.NET, APIs, SaaS, and legacy-system migration.</p></div></div>
-      </div>
-    </div></section>
-
-    <section class="cta" id="contact"><div class="wrap"><div class="cta-box"><div class="cta-content"><div class="kicker">Let’s connect</div><h2>Have a technology project to deliver?</h2><p>I’m happy to connect about project management opportunities, technology delivery, or practical applications of AI and workflow automation.</p><p class="contact-hint">Email <a href="mailto:connect@marvinguevarra.com">connect@marvinguevarra.com</a></p></div><a class="button" href="mailto:connect@marvinguevarra.com?subject=Project%20Management%20Inquiry">Get in touch <span aria-hidden="true">↗</span></a></div></div></section>
-  </main>
-  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year">2026</span> Marvin Guevarra · Project Manager</span><span>Technology delivery · Banking systems · Digital transformation</span></div></footer>
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
-    const menuToggle=document.querySelector('.menu-toggle');
-    const primaryNav=document.getElementById('primary-nav');
-    menuToggle.addEventListener('click',()=>{
-      const isOpen=menuToggle.getAttribute('aria-expanded')==='true';
-      menuToggle.setAttribute('aria-expanded',String(!isOpen));
-      menuToggle.setAttribute('aria-label',isOpen?'Open navigation':'Close navigation');
-      menuToggle.textContent=isOpen?'☰':'×';
-      primaryNav.classList.toggle('open',!isOpen);
-    });
-    primaryNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
-      menuToggle.setAttribute('aria-expanded','false');
-      menuToggle.setAttribute('aria-label','Open navigation');
-      menuToggle.textContent='☰';
-      primaryNav.classList.remove('open');
-    }));
-  </script>
-</body>
-</html>
+    <!-- RAG SECTION START -->
+    <section class="channels" id="rag">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">AI Knowledge Retrieval</div>
+          <h2>Automated RAG Pipeline.</h2>
+          <p>A secure, two-stage Retrieval-Augmented Generation system that ingests private documents from Google Drive, embeds them into a Vector Database, and allows a private AI Agent to answer questions based on the ingested knowledge.</p>
+        </div>
+        
+        <div style="background:#fff; border:1px solid var(--line); border-radius:22px; padding:30px; box-shadow:var(--shadow); margin-bottom: 30px;">
+          <img src="rag-pipeline.png" alt="RAG Pipeline n8n workflow" style="width:100%; border-radius:12px; border:1px solid #edf0ed; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-bottom: 25px;">
+          
+          <div class="channel-grid" style="margin-top: 10px;">
+            <article class="channel" style="padding: 20px; background: var(--cream);">
+              <div class="channel-icon">📄</div>
+              <h3>Data Ingestion</h3>
+              <p>Automates the fetching of files from Google Drive, chunks the text using a Recursive Splitter, and upserts embeddings into a Pinecone Vector Store.</p>
+              <span class="channel-tag">Google Drive · Pinecone · Text Splitter</span>
+            </article>
+            
+            <article class="channel" style="padding: 
